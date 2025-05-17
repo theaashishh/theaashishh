@@ -5,8 +5,7 @@ const About = () => {
   const frontendSkills = ["HTML", "CSS", "React", "JavaScript", "Tailwindcss"];
   const backendSkills = ["Node.js", "Express.js", "MySQL"];
   const skillRef = useRef([]);
-  const edRef = useRef()
-  const cerRef = useRef()
+
 
 
   useEffect(() => {
@@ -94,8 +93,8 @@ const About = () => {
             </h3>
             <ul className="list-disc list-inside text-white">
               <li>
-                Bachelors in Information Technology - Mumbai University
-                (2022-2025)
+                <span className="font-semibold">Bachelors in Information Technology</span> - <span className="italic">Mumbai University (2022-2025)</span>
+                
               </li>
             </ul>
           </div>
@@ -105,7 +104,7 @@ const About = () => {
               🧾 Certification
             </h3>
             <ul className="list-disc list-inside text-white space-y-2">
-              <li>Java Backend Development with Spring Boot and MySQL (Offline Course)</li>
+              <li className="font-semibold">Java Backend Development with Spring Boot and MySQL - <span className="font-normal italic">Quastech Thane (Offline Course)</span></li>
             </ul>
           </div>
         </div>

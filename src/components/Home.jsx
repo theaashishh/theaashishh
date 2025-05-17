@@ -7,6 +7,7 @@ import About from "./About";
 import Project from "./Project";
 import Contact from "./Contact";
 import Introduction from "./Introduction";
+import { ScrollSmoother } from 'gsap/all';
 
 // Register plugin once
 gsap.registerPlugin(ScrollToPlugin);
@@ -29,6 +30,7 @@ const Home = () => {
 
       // Animate scroll to target using GSAP
       gsap.to(window, {
+
         scrollTo: target,
         duration: 0.4,
         ease: "power3.out",

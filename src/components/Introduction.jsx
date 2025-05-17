@@ -37,7 +37,7 @@ const Introduction = () => {
           <span
             key={i}
             ref={(el) => (wordsRefs.current[i] = el)}
-            className="inline-block mr-1"
+            className="inline-block mr-1 pr-3"
           >
             {word}
           </span>

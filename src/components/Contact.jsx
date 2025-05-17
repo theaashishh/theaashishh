@@ -26,10 +26,10 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="min-h-screen w-full flex items-center justify-center bg-[#ffff00] text-gray-800 px-6 py-12"
+      className=" min-h-screen w-full flex items-center justify-center bg-[#ffff00] text-gray-800 px-6 py-12"
     >
-      <div className="max-w-xl w-full text-center">
-        <h3 className="text-3xl font-bold mb-6">Contact Me</h3>
+      <div className="max-w-3xl w-full text-center">
+        <h3 className="text-5xl font-bold mb-6">Contact Me</h3>
         <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
           <input
             type="text"
@@ -44,7 +44,6 @@ const Contact = () => {
             value={formData.email}
             className="bg-white/5 border border-black/60 rounded px-4 py-3 text-black transition focus:outline-none focus:border-black-100 focus:bg-blue-500/10"
             onChange={(e)=> setFormData({...formData, email:e.target.value})}
-
           />
           <textarea
             placeholder="Your Message"
